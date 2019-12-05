@@ -5,23 +5,11 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 </head>
 <body>
-<span th:each="directory:${directories}">
-   <!-- <span th:text="${directory}"></span>-->
-    <!--<input type="hidden" name="paramName" value="1"/>-->
-    <input type="submit" id="deleteDirectory" th:value="delete">
-    <a  th:href= "@{/(path = ${path} +${delimeter} + ${directory})} "  th:text = "${path} +${delimeter} + ${directory}">  </a>
-<br>
+
 </span>
-<span th:each="textFile:${textFiles}">
-    <input type="button" class = "DeleteController" th:action="@{/delete}" th:value="delete" }>
-    <input type="submit" id="changeTextFile" th:value="change">
+<span th:each="textFile:${UserById}">
+
     <span th:text = "${textFile}"></span>
-    <br>
-</span>
-<span th:each="notTextFile:${notTextFiles}">
-    <input type="submit" id="deleteNotTextFile" th:value="Delete">
-    <span th:text="${notTextFile}">
-    </span>
     <br>
 </span>
 

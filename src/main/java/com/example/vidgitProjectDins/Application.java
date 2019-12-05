@@ -1,4 +1,4 @@
-package com.example.vidgitProjectEpam;
+package com.example.vidgitProjectDins;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
